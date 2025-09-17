@@ -1,7 +1,73 @@
-body,
-html {
-  /* height:100%; */
+body
+{
+  display: grid;
+  grid-template-rows: auto, 1fr, auto;
+  overflow-x: hidden;
+}
+body, html {
+   height: 100%;
+   font-size: large;
+}
 
-  margin: 0px;
-  padding: 0px;
+html
+{
+  header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px, solid, black;
+  }
+  
+  header nav ul /*Links within the header */
+    {
+      gap: 1rem;
+      display: flex;
+      list-style: none;
+    }
+  
+  main /* Major Container for the store items. */
+  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    gap: 5px;
+    padding: 1rem; /*DON'T CHANGE */
+    
+  }
+  .store-item /* Store Item Boxes Container*/
+  {
+    height: 480px;
+    width: 350px;
+    border: 1px, solid, black;
+    text-align: center;
+    padding: 5px;
+    display: grid; 
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .store-item p {
+      margin: 0.5rem 0;
+    }
+
+  p > span /* Rating, Price, and Stock information */
+  {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .store-item img
+  {
+    width: 70%;
+    height: auto;
+    margin: 0 auto 0.5rem
+  }
+  footer
+  {
+    display: flex;
+    justify-content: center;
+  }
 }
