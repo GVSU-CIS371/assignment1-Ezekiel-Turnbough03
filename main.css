@@ -38,33 +38,33 @@ html
   }
   .store-item /* Store Item Boxes Container*/
   {
-    height: 480px;
+    height: 400px;
     width: 350px;
     border: 1px, solid, black;
     text-align: center;
     padding: 5px;
-    display: grid; 
-    flex-direction: column;
-    justify-content: flex-start;
   }
   .store-item p {
-      margin: 0.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
     }
 
   .store-item span /* Rating, Price, and Stock information */
   {
+    height: 10%;
     margin-top: auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
   }
   
   .store-item img
   {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: 0 auto 0.5rem
   }
+  
   footer
   {
     display: flex;
