@@ -51,12 +51,12 @@ html
       margin: 0.5rem 0;
     }
 
-  p > span /* Rating, Price, and Stock information */
+  .store-item span /* Rating, Price, and Stock information */
   {
     margin-top: auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .store-item img
