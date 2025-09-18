@@ -61,10 +61,10 @@ html
   .store-item img
   {
     width: 60%;
-    height: auto;
+    height: 200px;
     margin: 0 auto 0.5rem
   }
-  
+
   footer
   {
     display: flex;
